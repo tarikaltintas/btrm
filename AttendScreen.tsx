@@ -37,7 +37,7 @@ export const AttendScreen: FC<AttendScreenProps> = observer(function AttendScree
     return (
       <Screen style={$screenContainer} safeAreaEdges={["top"]}>
         <View style={$permissionContainer}>
-          <Text text="Kamera izni gerekli. Lütfen uygulamanın kameraya erişimine izin verin." style={$permissionText} />
+          <Text text="Camera permission is required. Please allow the app to access the camera." style={$permissionText} />
           <Button
             text="İzin İste"
             style={$permissionButton}
@@ -52,7 +52,7 @@ export const AttendScreen: FC<AttendScreenProps> = observer(function AttendScree
     return (
       <Screen style={$screenContainer} safeAreaEdges={["top"]}>
         <View style={$permissionContainer}>
-          <Text text="Kamera cihazı bulunamadı" style={$permissionText} />
+          <Text text="Camera device not found" style={$permissionText} />
         </View>
       </Screen>
     )
